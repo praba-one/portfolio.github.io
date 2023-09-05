@@ -1,0 +1,197 @@
+*{
+padding: 0%;
+margin: 0%;
+font-family: sans-serif;
+}
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+.parent{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 30px;
+    text-transform: uppercase;
+}
+.head{
+    color: white;
+    font-size: 50px;
+    filter: drop-shadow(4px 4px black);
+}
+.child a{
+    margin:10px ;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+    filter: drop-shadow(2px 2px black);
+    text-transform: uppercase;
+}
+.big{
+    display: flex;
+    padding: 30px;
+    background-color: black;
+    color: white;
+}
+
+.small .inside img{
+    width: 350px;
+    height: auto;
+
+}
+.small .inside{
+    background-color: rgb(71, 71, 71);
+    padding: 20px;
+    color: white;
+}
+.smallone{
+    width: 400px;
+    margin: 100px auto;
+}
+.smallone h1{
+    margin: 10px 0;
+}
+.smallone h3{
+    margin: 5px 0;
+    font-size: 25px;
+}
+ span{
+    color: aqua;
+    text-decoration: underline;
+}
+.large{
+    display: flex;
+    color: white;
+background-color: black;}
+.large .small2 img{
+    width: 450px;
+    margin: 100px auto;
+    display: block;
+}
+.large .kutty h1{
+    text-align: center;
+    background-color: red;
+    width: 400px;
+    margin: 10px auto;
+    
+}
+.large .kutty h3{
+    text-align: center;
+    border-color: black;
+}
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: grey;
+}
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+p::selection{
+    background-color: aqua;
+    color: rgb(0, 0, 0);
+}
+span::selection{
+    background-color: black;
+    color: aqua;
+}
+i{
+    color: white;
+}
+
+.kutty {
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .kutty button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: 2px solid aqua;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .kutty i {
+    font-size: 24px;
+    margin: 5px;
+  }
+.kutty button:hover{
+    background-color: aqua;
+    color: black;
+}
+.skills{
+    background-color: rgb(26, 25, 25);
+    padding: 100px;
+    color: white;
+}
+.skills h1{
+    background-color: red;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px;
+    width: 500px;
+}
+.skills h2{
+    line-height: 50px;
+    font-size: 25px;
+    word-spacing: 15px;
+}
+.services{
+    background-color: black;
+    padding: 50px;
+}
+.services h1{
+    background-color: red;
+    text-align: center;
+    width: 500px;
+    margin: 20px auto;
+    border-radius: 25px;
+    padding: 10px;
+    color: white;
+}
+.cards {
+    display: flex;
+}
+.cards .card{
+    width: 33%;
+    padding: 10px;
+    margin: 0 10px;
+}
+.services i{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    background-color: red;
+    padding: 15px;
+    border-radius: 50%;
+    width: 80px;
+    margin: 0 auto;
+}
+.card{
+    background-color: rgb(46, 46, 46);
+    color: white;
+    box-shadow:inset 2px 2px 8px white;
+    transition:all 0.5s;
+}
+.card:hover{
+    background-color: purple;
+    transition: 0.5s ease-in-out;
+}
+.card:hover i{
+    transform: rotate(45deg);
+    transition: 0.5s ease-in-out;
+}
+
+.card h3{
+    text-align: center;
+}
