@@ -323,4 +323,36 @@ i{
       font-size: 30px;
     }
   }
+  .nav-toggle {
+    display: none; /* Hide the toggle button by default */
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
   
+  /* Style the navigation links for small screens */
+  @media (max-width: 768px) {
+    .nav-toggle {
+      display: block; /* Show the toggle button on small screens */
+    }
+    .child {
+      display: none; /* Hide the navigation links by default on small screens */
+      background-color: black;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+    }
+    .child a {
+      display: block;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+  }
+  .child.show {
+    display: block;
+  }
